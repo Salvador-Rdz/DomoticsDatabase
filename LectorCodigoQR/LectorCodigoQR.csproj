@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99E8C39F-15DD-4D81-9BAC-3D7874F71506}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LectorCodigoQR</RootNamespace>
+    <AssemblyName>LectorCodigoQR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>LibreriasQR\AForge\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>LibreriasQR\AForge\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>LibreriasQR\AForge\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.BarcodeReader">
+      <HintPath>LibreriasQR\BarcodeLib_NETBarcodeReader_Trial\BarcodeLib.BarcodeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlmacenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlmacenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana2.Designer.cs">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fuck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fuck.Designer.cs">
+      <DependentUpon>Fuck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management.Designer.cs">
+      <DependentUpon>Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartMenu.cs" />
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana1.Designer.cs">
+      <DependentUpon>Ventana1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana3.Designer.cs">
+      <DependentUpon>Ventana3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fuck.resx">
+      <DependentUpon>Fuck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana1.resx">
+      <DependentUpon>Ventana1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana2.resx">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana3.resx">
+      <DependentUpon>Ventana3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AlmacenDataSet.xsc">
+      <DependentUpon>AlmacenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlmacenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlmacenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlmacenDataSet.xss">
+      <DependentUpon>AlmacenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Chango_go\LOGO.psd" />
+    <None Include="Fuck.Designer.form" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chango_go\Adios\Adios_A.png" />
+    <Content Include="Chango_go\Adios\Adios_DI.png" />
+    <Content Include="Chango_go\Adios\Adios_Final.png" />
+    <Content Include="Chango_go\Adios\Adios_O.png" />
+    <Content Include="Chango_go\Adios\Adios_S.png" />
+    <Content Include="Chango_go\Hola\Hola_A.png" />
+    <Content Include="Chango_go\Hola\Hola_Final.png" />
+    <Content Include="Properties\Resources\Hola_HO.png" />
+    <Content Include="Chango_go\Hola\Hola_L.png" />
+    <Content Include="Chango_go\LOGO.png" />
+    <Content Include="Chango_go\Parpadeo\Blink_1.png" />
+    <Content Include="Chango_go\Parpadeo\Blink_2.png" />
+    <Content Include="Chango_go\Parpadeo\Blink_3.png" />
+    <Content Include="Properties\Resources\b.PNG" />
+    <Content Include="Properties\Resources\c.PNG" />
+    <Content Include="Properties\Resources\d.PNG" />
+    <Content Include="Properties\Resources\e.PNG" />
+    <Content Include="Properties\Resources\f.PNG" />
+    <Content Include="Properties\Resources\h.PNG" />
+    <Content Include="Properties\Resources\i.PNG" />
+    <Content Include="Properties\Resources\j.png" />
+    <Content Include="Properties\Resources\k.png" />
+    <Content Include="Properties\Resources\l.PNG" />
+    <Content Include="Properties\Resources\m.PNG" />
+    <Content Include="Properties\Resources\n.PNG" />
+    <None Include="Properties\Resources\a.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
